@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&family=Shippori+Mincho&family=Yuji+Boku&display=swap"
+        rel="stylesheet">
+    <!-- reset.css ress -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>麺処 隠龍</title>
+</head>
+
+<body>
+    <header class="side-fixed is-left">
+        <h1 class="site-logo">
+            <a href="#top">
+                <img src="img/店ロゴ.png" alt="店ロゴ">
+            </a>
+        </h1>
+
+
+        <nav class="side-fixed is-right" id="navi">
+            <ul>
+                <li>
+                    <a href="#top">表紙</a>
+                </li>
+                <li>
+                    <a href="#about">真髄</a>
+                </li>
+                <li>
+                    <a href="#menu">献立</a>
+                </li>
+                <li>
+                    <a href="#infomation">案内</a>
+                </li>
+                <li>
+                    <a href="#reservation">予約</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="toggle_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <div class="mainvisual">
+            <ul>
+                <li class="mv-item">
+                    <img src="img/表紙 キッチン.jpg" alt="表紙キッチン" class="bg-img">
+                    <p class="catch-copy">日常を忘れる、<br>静謐な一杯</p>
+                </li>
+                <li class="mv-item">
+                    <img src="img/表紙 店内.jpg" alt="表紙店内" class="bg-img">
+                    <p class="catch-copy">路地裏に灯る、<br>大人のための麺のご褒美</p>
+                </li>
+                <li class="mv-item">
+                    <img src="img/表紙 料理.jpg" alt="表紙料理" class="bg-img">
+                    <p class="catch-copy">至高の出汁と、<br>厳選素材が織りなす極み</p>
+                </li>
+            </ul>
+        </div>
+        <section id="about">
+            <h1 class="section-title">真髄</h1>
+            <div class="about-container">
+                <h3 class="about-title">静謐な一杯を生む「引き算の出汁設計」</h3>
+                <article class="about-item">
+                    <div class="about-text">
+                        <p>
+                            厳選した地鶏と数種の節、<br>
+                            昆布を極めて低温で抽出し、<br>
+                            雑味を削ぎ落とした琥珀色の出汁。
+                        </p>
+                    </div>
+                    <div class="about-img">
+                        <img src="img/真髄 店内.jpg" alt="店内">
+                    </div>
+                </article>
+                <h3 class="about-title">日常を忘れる「大人のための静寂空間」</h3>
+                <article class="about-item">
+                    <div class="about-text">
+                        <p>
+                            大衆的な賑わいを排し、<br>
+                            静かに一杯を味わうための<br>
+                            空間を提供します。
+                        </p>
+                    </div>
+                    <div class="about-img">
+                        <img src="img/真髄 静寂.jpg" alt="空間">
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="menu">
+            <h1 class="section-title">献立</h1>
+            <article class="menu-container">
+                <h2 class="menu-title">ラーメン</h2>
+                <div class="menu-item">
+                    <div class="menu-img">
+                        <img src="img/醤油.jpg" alt="醤油ラーメン">
+                    </div>
+                    <div class="menu-text">
+                        <h3>醤油</h3>
+                        <p>
+                            丸鶏と魚介のダブルスープ。琥珀色に輝く、静寂の一杯。
+                        </p>
+                        <p class="price">
+                            1,200円
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-img">
+                        <img src="img/塩.jpg" alt="塩ラーメン">
+                    </div>
+                    <div class="menu-text">
+                        <h3>濃厚塩</h3>
+                        <p>
+                            五島の海塩と貝出汁の濃縮された旨味。
+                        </p>
+                        <p class="price">
+                            1,300円
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-img">
+                        <img src="img/蕎麦.jpg" alt="蕎麦">
+                    </div>
+                    <div class="menu-text">
+                        <h3>特製 鴨つけ蕎麦</h3>
+                        <p>
+                            今の時期限定の一品。低温調理した鴨肉を添えた、全粒粉入りの太麺。
+                        </p>
+                        <p class="price">
+                            1,600円
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <h2 class="menu-title">サイド</h2>
+            <article class="menu-container">
+                <div class="menu-item">
+                    <div class="menu-img">
+                        <img src="img/チャーシュー丼.jpg" alt="チャーシュー丼">
+                    </div>
+                    <div class="menu-text">
+                        <h3>炙りチャーシュー丼</h3>
+                        <p>
+                            香ばしく炙った鴨肉のチャーシューに特製ダレをかけて。
+                        </p>
+                        <p class="price">
+                            700円
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-img">
+                        <img src="img/焼き野菜.jpg" alt="焼き野菜">
+                    </div>
+                    <div class="menu-text">
+                        <h3>季節の焼き野菜</h3>
+                        <p>
+                            旬の野菜をシンプルに塩とオリーブオイルで。
+                        </p>
+                        <p class="price">
+                            750円
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <h2 class="menu-title">ドリンク</h2>
+            <article class="menu-container">
+                <div class="menu-item">
+                    <div class="menu-img">
+                        <img src="img/日本酒.jpg" alt="日本酒">
+                    </div>
+                    <div class="menu-text">
+                        <h3>厳選日本酒（１合）</h3>
+                        <p>
+                            季節ごとに店主が選ぶ、淡麗辛口を中心としたラインナップ。
+                        </p>
+                        <p class="price">
+                            900円~
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-img">
+                        <img src="img/ビール.jpg" alt="ビール">
+                    </div>
+                    <div class="menu-text">
+                        <h3>クラフトビール</h3>
+                        <p>
+                            柑橘系の香りがラーメンの脂を洗い流してくれます。
+                        </p>
+                        <p class="price">
+                            850円
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-img">
+                        <img src="img/ワイン.jpg" alt="ワイン">
+                    </div>
+                    <div class="menu-text">
+                        <h3>国産ワイン（赤/白）</h3>
+                        <p>
+                            出汁の繊細さを邪魔しない、穏やかな味わい。
+                        </p>
+                        <p class="price">
+                            900円~
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="infomation">
+            <h1 class="section-title">案内</h1>
+            <img src="img/案内.jpg" alt="案内" class="info-img">
+            <article class="info-menu">
+                <div class="info-content">
+                    <dl>
+                        <dt>営業時間</dt>
+                        <dd>11:00~23:00(L.O 22:30)</dd>
+                        <dt>定休日</dt>
+                        <dd>毎週火・水曜日</dd>
+                        <dt>所在地</dt>
+                        <dd>福岡県福岡市博多区</dd>
+                        <dt>アクセス方法</dt>
+                        <dd>
+                            地下鉄箱崎線<br>
+                            呉服町駅から徒歩10分
+                        </dd>
+                    </dl>
+                </div>
+            </article>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.2852338741263!2d130.4078121546928!3d33.59790296901689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354191e9f41bb25f%3A0x599dcec4819d60d6!2z5ZGJ5pyN55S66aeF!5e0!3m2!1sja!2sjp!4v1767751639466!5m2!1sja!2sjp"
+                width="" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">MAP</iframe>
+        </section>
+        <section id="reservation">
+            <h1 class="section-title">予約</h1>
+            <article class="reservation-text">
+                <h3>
+                    〜お店のご予約について〜
+                </h3>
+                <p>
+                    当店では、静かなひとときをお求めのお客様へ
+                    空間を提供するため、
+                    ご予約なしでもご利用いただけます。
+                </p>
+                <p>
+                    しかしながら、特に混雑が予想される時間帯には、待ち時間なく確実にお席へご案内できるよう、
+                    ご予約席も数席ご用意しております。
+                </p>
+                <p>
+                    お時間を大切にされたい方、または二名様以上でのご利用予定のお客様は、事前のウェブ予約をご利用いただくことを推奨しております。
+                </p>
+            </article>
+            <h1 class="section-title">予約フォーム</h1>
+            <div class="reservation-container">
+                <form class="reservation-form">
+                    <div class="form-group">
+                        <label for="reservation_date">予約日：</label>
+                        <input type="date" id="reservation_date" name="reservation_date" value="2026-01-01" min="2026-01-01" max="2026-12-31" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="reservation_time">予約時間：</label>
+                        <select name="reservation_time" id="reservation_time" required>
+                            <option value="11:00">11:00</option>
+                            <option value="11:30">11:30</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="14:00">14:00</option>
+                            <option value="14:30">14:30</option>
+                            <option value="15:00">15:00</option>
+                            <option value="15:30">15:30</option>
+                            <option value="16:00">16:00</option>
+                            <option value="16:30">16:30</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                            <option value="21:30">21:30</option>
+                            <option value="22:00">22:00</option>
+                            <option value="22:30">22:30</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="party_size">予約人数：</label>
+                        <select name="party_size" id="party-size" required>
+                            <option value="1">1名</option>
+                            <option value="2">2名</option>
+                            <option value="3">3名</option>
+                            <option value="4">4名</option>
+                            <option value="5">5名</option>
+                            <option value="6">6名以上（要相談）</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="user_name">氏名：</label>
+                        <input type="text" id="user_name" name="user_name" placeholder="山田 太郎" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="user_tel">電話番号：</label>
+                        <input type="tel" id="user_name" name="user_name" placeholder="090-0000-0000" required>
+                    </div>
+                </form>
+                
+            </div>
+            <button type="submit" class="submit-btn">予約</button>
+
+        </section>
+    </main>
+    <footer>
+        <h3>麺処 隠龍</h3>
+        <p>静寂と美食の隠れ家</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

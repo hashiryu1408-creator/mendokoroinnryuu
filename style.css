@@ -1,0 +1,486 @@
+@charset "UTF-8";
+
+/* * {
+    border: 1px solid black;
+}   */
+
+html {
+    font-size: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #192b45;
+    text-decoration: none;
+}
+
+body {
+    background-color: #1c1c1c;
+    margin: 0;
+    overflow-x: hidden;
+
+}
+
+img{
+    object-fit: cover;
+}
+
+/* header */
+.side-fixed {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.is-left {
+    left: 3%;
+    right: 3%;
+}
+
+.is-left img {
+    width: 25%;
+    border-radius: 50%;
+}
+
+
+#navi a {
+    padding: 7px 93px;
+}
+
+
+nav ul li {
+    background-color: #f0f0f8;
+    color: #192b45;
+    font-size: 32px;
+    width: 254px;
+    height: 48px;
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.is-right {
+    right: 0;
+}
+
+/* main */
+main {
+    width: 460px;
+    margin: 0 auto;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    color: #e0e0e0;
+    background-color: #192b45;
+}
+
+main img {
+    width: 460px;
+    height: 280px;
+    vertical-align: bottom;
+}
+
+.mainvisual {
+    width: 100%;
+}
+
+.mv-item{
+    position: relative;
+}
+
+.bg-img {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    display: block;
+    object-fit: cover;
+    opacity: 0.6;
+    margin-bottom: 15px;
+}
+
+.mv-item::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow:inset 0px 0px 17px 110px rgba(17,17,26,1);
+}
+
+.catch-copy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    text-align: center;
+    color: #E0E0E0;
+    font-family: "Shippori Mincho";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 1;
+}
+
+.section-title {
+    color: #e0e0e0;
+    font-size: 36px;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 0;
+    font-family: "Yuji Boku";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 90px;
+    align-items: center;
+    padding-top: 10px;
+}
+
+/* about */
+.about-container {
+    margin: 0 auto;
+}
+
+.about-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+}
+
+.about-title {
+    text-align: center;
+    color: #B28F42;
+    font-family: "Noto Serif JP";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.about-img {
+    width: 40%;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 25px;
+    height: 198px;
+}
+
+.about-text {
+    width: 60%;
+    padding: 10px;
+    color: #E0E0E0;
+    font-family: "Shippori Mincho";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.about-item:nth-of-type(2) {
+    flex-direction: row-reverse;
+}
+/* .about-item:nth-child(2) {
+    flex-direction: row-reverse;
+} */
+
+/* menu */
+.menu-container {
+    padding-left: 15px;
+}
+
+.menu-item {
+    display: flex;
+    max-width: 100%;
+    width: 424px;
+    height: 117px;
+    border-radius: 10px;
+    background: #F0F0E8;
+    color: #192b45;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.menu-title {
+    color: #E0E0E0;
+    font-family: "Shippori Mincho";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 10px;
+}
+
+.menu-text h3 {
+    color:#192B45;
+    font-family: "Shippori Mincho";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    
+}
+
+.menu-text p {
+    margin: 0 auto;
+    color:#192B45;
+    font-family: "Shippori Mincho";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu-text .price {
+    color: #B55B3F;
+    font-family: "Shippori Mincho";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.menu-img {
+    max-width: 100%;
+    margin: 10px;
+}
+
+.menu-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+/* info */
+.info-content dl {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.info-content dt {
+    width: 30%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+}
+
+.info-content dd {
+    width: 70%;
+    text-align: center;
+    padding-top: 5px;
+    border-bottom: 1px solid #fff;
+}
+
+.info-img {
+    width: 100%;
+}
+
+iframe{
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+/* reservation */
+.reservation-text {
+    padding-bottom: 20px;
+}
+
+.reservation-text  h3 {
+    padding: 10px;
+    text-align: center;
+}
+
+.reservation-text p {
+    padding: 0 10px;
+    margin-bottom: 5px;
+}
+
+.reservation-container {
+    background-color: #d9d9d9;
+    color: #000;
+    border-radius: 5px;
+    width: 411px;
+    height: 242px;
+    display: flex;  
+    justify-content: center;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    border-bottom: #000 solid 1px;
+}
+
+.form-row {
+    border-bottom: #000 solid 1px;
+}
+
+.form-group select {
+    cursor: pointer;
+}
+
+.form-group input {
+    cursor: pointer;
+}
+
+.form-row select {
+    cursor: pointer;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: #192B45;
+}
+
+.submit-btn {
+    width: 129px;
+    height: 37px;
+    background-color: #f0f0e8;
+    color: #192B45;
+    border: 2px solid #f0f0e8;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin: 0 0 20px 160px;
+}
+
+.submit-btn:hover {
+    background-color: #192B45;
+    color: #f0f0e8;
+}
+
+
+/* footer */
+footer {
+    height: 219px;
+    background-color: #d9d9d9;
+    color: #192B45;
+    display: flex;
+    flex-direction: column;
+}
+
+footer h3 {
+    text-align: center;
+    font-size: 24px;
+    padding-top: 6%;
+}
+
+footer p {
+    text-align: center;
+    font-size: 16px;
+}
+
+/* responsive */
+@media (max-width: 1080px) {
+    .side-fixed {
+        position: fixed;
+        width: 100%;
+        height: 90px;
+        top: 0;
+        transform: none;
+        max-width: 460px;
+        right:0;
+        left:0;
+        margin:0 auto;
+        display: flex;
+        justify-content: space-between;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .site-logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .site-logo img{
+        width: 100%;
+    }
+
+
+
+    .toggle_btn {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .toggle_btn span {
+        display: block;
+        width: 100%;
+        height: 8px;
+        background-color: #f0f0e8;
+        position: absolute;
+        transition: all 0.5s ease;
+    }
+
+    .toggle_btn span:nth-child(1) {
+        top: 36%;
+    }
+
+    .toggle_btn span:nth-child(2) {
+        top: 50%;
+        visibility: visible;
+    }
+
+    .toggle_btn span:nth-child(3) {
+        top: 64%;
+    }
+
+    .open .toggle_btn span:nth-child(1) {
+        transform: rotate(-45deg);
+        top: 50%;
+    }
+
+    .open .toggle_btn span:nth-child(2) {
+        transform: rotate(45deg);
+        visibility: hidden;
+    }
+
+    .open .toggle_btn span:nth-child(3) {
+        transform: rotate(45deg);
+        top: 50%;
+    }
+
+    .mainvisual {
+        padding-top: 90px;
+    }
+
+    #navi {
+        max-width: 100%;
+        height: 100vh;
+        background-color: #1c1c1c;
+        color: #f0f0f8;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 50;
+        text-align: center;
+        transition: all 0.6s ease;
+        opacity: 0;
+        visibility: hidden;
+        padding-top: 100px;
+        padding-left: 80px;
+    }
+
+    .open #navi {
+        opacity: 1;
+        visibility: visible;
+    }
+
+}
