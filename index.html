@@ -103,9 +103,7 @@
             <article class="menu-container">
                 <h2 class="menu-title">ラーメン</h2>
                 <div class="menu-item">
-                    <div class="menu-img">
-                        <img src="img/醤油.jpg" alt="醤油ラーメン">
-                    </div>
+                    <img src="img/醤油.jpg" alt="醤油ラーメン" class="menu-img">
                     <div class="menu-text">
                         <h3>醤油</h3>
                         <p>
@@ -117,9 +115,7 @@
                     </div>
                 </div>
                 <div class="menu-item">
-                    <div class="menu-img">
-                        <img src="img/塩.jpg" alt="塩ラーメン">
-                    </div>
+                    <img src="img/塩.jpg" alt="塩ラーメン" class="menu-img">
                     <div class="menu-text">
                         <h3>濃厚塩</h3>
                         <p>
@@ -131,13 +127,11 @@
                     </div>
                 </div>
                 <div class="menu-item">
-                    <div class="menu-img">
-                        <img src="img/蕎麦.jpg" alt="蕎麦">
-                    </div>
+                    <img src="img/蕎麦.jpg" alt="蕎麦" class="menu-img">
                     <div class="menu-text">
                         <h3>特製 鴨つけ蕎麦</h3>
                         <p>
-                            今の時期限定の一品。低温調理した鴨肉を添えた、全粒粉入りの太麺。
+                            期間限定限定の一品。低温調理した鴨肉を添えた、全粒粉入りの太麺。
                         </p>
                         <p class="price">
                             1,600円
@@ -145,12 +139,11 @@
                     </div>
                 </div>
             </article>
-            <h2 class="menu-title">サイド</h2>
+            
             <article class="menu-container">
+                <h2 class="menu-title">サイド</h2>
                 <div class="menu-item">
-                    <div class="menu-img">
-                        <img src="img/チャーシュー丼.jpg" alt="チャーシュー丼">
-                    </div>
+                    <img src="img/チャーシュー丼.jpg" alt="チャーシュー丼" class="menu-img">
                     <div class="menu-text">
                         <h3>炙りチャーシュー丼</h3>
                         <p>
@@ -162,9 +155,7 @@
                     </div>
                 </div>
                 <div class="menu-item">
-                    <div class="menu-img">
-                        <img src="img/焼き野菜.jpg" alt="焼き野菜">
-                    </div>
+                    <img src="img/焼き野菜.jpg" alt="焼き野菜" class="menu-img">
                     <div class="menu-text">
                         <h3>季節の焼き野菜</h3>
                         <p>
@@ -176,12 +167,11 @@
                     </div>
                 </div>
             </article>
-            <h2 class="menu-title">ドリンク</h2>
+            
             <article class="menu-container">
+                <h2 class="menu-title">ドリンク</h2>
                 <div class="menu-item">
-                    <div class="menu-img">
-                        <img src="img/日本酒.jpg" alt="日本酒">
-                    </div>
+                    <img src="img/日本酒.jpg" alt="日本酒" class="menu-img">
                     <div class="menu-text">
                         <h3>厳選日本酒（１合）</h3>
                         <p>
@@ -193,9 +183,7 @@
                     </div>
                 </div>
                 <div class="menu-item">
-                    <div class="menu-img">
-                        <img src="img/ビール.jpg" alt="ビール">
-                    </div>
+                    <img src="img/クラフトビール.jpg" alt="クラフトビール" class="menu-img">
                     <div class="menu-text">
                         <h3>クラフトビール</h3>
                         <p>
@@ -207,9 +195,7 @@
                     </div>
                 </div>
                 <div class="menu-item">
-                    <div class="menu-img">
-                        <img src="img/ワイン.jpg" alt="ワイン">
-                    </div>
+                    <img src="img/ワインのコピー.jpg" alt="ワイン" class="menu-img">
                     <div class="menu-text">
                         <h3>国産ワイン（赤/白）</h3>
                         <p>
@@ -269,62 +255,79 @@
             <h1 class="section-title">予約フォーム</h1>
             <div class="reservation-container">
                 <form class="reservation-form">
-                    <div class="form-group">
-                        <label for="reservation_date">予約日：</label>
-                        <input type="date" id="reservation_date" name="reservation_date" value="2026-01-01" min="2026-01-01" max="2026-12-31" required>
-                    </div>
-                    <div class="form-row">
-                        <label for="reservation_time">予約時間：</label>
-                        <select name="reservation_time" id="reservation_time" required>
-                            <option value="11:00">11:00</option>
-                            <option value="11:30">11:30</option>
-                            <option value="12:00">12:00</option>
-                            <option value="12:30">12:30</option>
-                            <option value="13:00">13:00</option>
-                            <option value="13:30">13:30</option>
-                            <option value="14:00">14:00</option>
-                            <option value="14:30">14:30</option>
-                            <option value="15:00">15:00</option>
-                            <option value="15:30">15:30</option>
-                            <option value="16:00">16:00</option>
-                            <option value="16:30">16:30</option>
-                            <option value="17:00">17:00</option>
-                            <option value="17:30">17:30</option>
-                            <option value="18:00">18:00</option>
-                            <option value="18:30">18:30</option>
-                            <option value="19:00">19:00</option>
-                            <option value="19:30">19:30</option>
-                            <option value="20:00">20:00</option>
-                            <option value="20:30">20:30</option>
-                            <option value="21:00">21:00</option>
-                            <option value="21:30">21:30</option>
-                            <option value="22:00">22:00</option>
-                            <option value="22:30">22:30</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="party_size">予約人数：</label>
-                        <select name="party_size" id="party-size" required>
-                            <option value="1">1名</option>
-                            <option value="2">2名</option>
-                            <option value="3">3名</option>
-                            <option value="4">4名</option>
-                            <option value="5">5名</option>
-                            <option value="6">6名以上（要相談）</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="user_name">氏名：</label>
-                        <input type="text" id="user_name" name="user_name" placeholder="山田 太郎" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="user_tel">電話番号：</label>
-                        <input type="tel" id="user_name" name="user_name" placeholder="090-0000-0000" required>
-                    </div>
+                    <dl>
+                        <dt>
+                            <label for="reservation_date">予約日</label>
+                        </dt>
+                        <dd>
+                            <input type="date" id="reservation_date" name="reservation_date" value="2026-01-01" min="2026-01-01" max="2026-12-31" required>
+                        </dd>
+
+                        <dt>
+                            <label for="reservation_time">予約時間</label>
+                        </dt>
+                        <dd>
+                            <select name="reservation_time" id="reservation_time" required>
+                                <option value="11:00">11:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="12:00">12:00</option>
+                                <option value="12:30">12:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="13:30">13:30</option>
+                                <option value="14:00">14:00</option>
+                                <option value="14:30">14:30</option>
+                                <option value="15:00">15:00</option>
+                                <option value="15:30">15:30</option>
+                                <option value="16:00">16:00</option>
+                                <option value="16:30">16:30</option>
+                                <option value="17:00">17:00</option>
+                                <option value="17:30">17:30</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                                <option value="22:30">22:30</option>
+                            </select>
+                        </dd>
+
+                        <dt>
+                            <label for="party_size">予約人数</label>
+                        </dt>
+                        <dd>
+                            <select name="party_size" id="party_size" required>
+                                <option value="1">1名</option>
+                                <option value="2">2名</option>
+                                <option value="3">3名</option>
+                                <option value="4">4名</option>
+                                <option value="5">5名</option>
+                                <option value="6">6名以上（要相談）</option>
+                            </select>
+                        </dd>
+
+                        <dt>
+                            <label for="user_name">氏名</label>
+                        </dt>
+                        <dd>
+                            <input type="text" id="user_name" name="user_name" placeholder="山田太郎" required>
+                        </dd>
+
+                        <dt>
+                            <label for="user_tel">電話番号</label>
+                        </dt>
+                        <dd>
+                            <input type="tel" id="user_tel" name="user_tel" placeholder="090-0000-0000" required>
+                        </dd>
+                    </dl>
+                    <button type="submit" class="submit-btn">予約を確定する</button>
                 </form>
                 
             </div>
-            <button type="submit" class="submit-btn">予約</button>
+            
 
         </section>
     </main>
