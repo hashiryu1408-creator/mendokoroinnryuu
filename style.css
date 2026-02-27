@@ -1,9 +1,4 @@
 @charset "UTF-8";
-
-/* * {
-    border: 1px solid black;
-}   */
-
 html {
     font-size: 100%;
 }
@@ -69,7 +64,8 @@ nav ul li {
 
 /* main */
 main {
-    width: 460px;
+    width: 100%;
+    max-width: 460px;
     margin: 0 auto;
     min-height: 100vh;
     position: relative;
@@ -303,7 +299,8 @@ iframe{
     cursor: pointer;
 }
 
-.reservation-form dd select,input {
+.reservation-form dd select,
+.reservation-form dd input {
     cursor: pointer;
     width: 100%;
     box-sizing: border-box;
@@ -367,7 +364,8 @@ footer p {
 /* responsive */
 @media (max-width: 1080px) {
     .main {
-        width: 402px;
+        width: 100%;
+        max-width: 402px;
     }
 
     .side-fixed {
@@ -463,6 +461,7 @@ footer p {
         visibility: hidden;
         padding-top: 100px;
         padding-left: 80px;
+        box-sizing: border-box;
     }
 
     .open #navi {
